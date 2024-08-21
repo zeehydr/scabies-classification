@@ -1,0 +1,105 @@
+
+.result-container.contact{
+    margin-top: -130px;
+}
+
+.d-cont.contatc{
+    gap: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 700px;
+    padding: 20px;
+    flex: 3;
+    
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.8px;
+text-align: left;
+
+  }
+  
+  .form input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: transparent;
+  }
+  .rectangle.subm{
+    display: flex;
+    width: min-content;
+    margin-top: 30px;
+
+  }
+  
+ .detect-28.btn{
+    background-color: transparent;
+    border: none;
+    width: min-content;
+ }
+  @media (max-width: 600px) {
+    .form {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 766px) {
+    .speech-img-container{
+        display: none !important;
+      }
+      .form {
+      
+        width: 80%;
+      
+        
+      }
+  }
+
+  @media (max-width: 506px) {
+   
+      .form {
+      
+        width: 98%;
+      
+        
+      }
+  }
+
+  .speech-img-container{
+    display: flex;
+    justify-content: center;
+    flex: 2 ;
+    
+  }
+  .speech-img{
+    width: 312px;
+    height: 312px;
+    background: url(./assets/images/speach.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 76;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0.5;
+  }

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detect</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica+Rounded:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+    <link rel="stylesheet" href="static/index.css" />
+    <link rel="stylesheet" href="static/detect.css" />
+
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- header and hero -->
+        <div class="flex-row-bd">
+            <div class="ellipse"></div>
+            <div class="frame-27"></div>
+
+            <header class="header-section">
+                <button style="border: none; visibility: hidden;" class="logo-text">
+                    <div class="scabies-detection">
+                        <span class="d">S</span><span class="detection">cabies</span><span class="nbsp"> </span><span
+                            class="d-16">D</span><span class="detection-17">etection</span>
+                    </div>
+                </button>
+                <div class="frame-29">
+                    <a href="/" style="color: white;" class="home-2a">Home</a>
+                    <a href="/detect.html" style="color: #FF0000;" class="detect-2b">Detect</a>
+                    <a href="/contact.html" class="contact-us-2c">Contact us</a>
+                </div>
+                <button class="rectangle"><span class="detect-28">Detect</span></button>
+                <div class="hamburger">
+                    <div class="lineii">Home</div>
+                    <div class="lineii">Detect</div>
+                    <div class="lineii">Contact</div>
+                </div>
+
+            </header>
+
+
+            <div class="frame-30"></div>
+
+        </div>
+
+
+
+
+
+        <div class="flex-row-fb detect-fb">
+            <div class="frame-31"></div>
+        </div>
+
+
+        <div class="detect-container">
+            <div class="d-cont">
+                <div class="detect-image-cont">
+                    <div class="detect-image">
+                    </div>
+                    <div class="fast-accurate-scabies-detection detect">
+                        <span class="fast-accurate-scabies-detection-2d">Fast and Accurate
+                            Scabies Detection
+                        </span>
+                    </div>
+                </div>
+
+                <div class="upload-container">
+                    <div class="upload-div">
+                        <button class="upload-btn" onclick="openPopup()">Upload Image</button>
+                        <span class="upload-icon"></span>
+                    </div>
+                    <p class="take-image">or take an image</p>
+                </div>
+
+                <!-- Popup -->
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <form class="form-signin" method="post" enctype="multipart/form-data" id="upload-form">
+
+                            <span class="close-btn" onclick="closePopup()">&times;</span>
+                            <p>Select an image to upload:</p>
+                            <input type="file" name="file" id="file-upload" class="form-control-file"
+                                style="display: none;" onchange="updateFileName()" id="inputfile" multiple
+                                accept="image/*" required>
+                            <!-- <input type="file" id="file-upload" accept="image/*" style="display: none;" onchange="updateFileName()"> -->
+                            <label for="file-upload" class="custom-file-upload">
+                                Choose File
+                            </label>
+                            <span id="file-name">No file chosen</span>
+                            <button class="upload-confirm-btn " type="submit" id="submit-btn">Upload</button>
+                            <!-- <button class="upload-confirm-btn " onclick="confirmUpload()">Upload</button> -->
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="result-container">
+            <div class="result-div">
+
+                <div class="uploadImageContainer">
+                    <div class="outerDivImage">
+                        <!-- Display uploaded image -->
+                        <div id="image-container" class="image-container"></div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="fast-accurate-scabies-detection detect">
+                        <span class="fast-accurate-scabies-detection-2d">Result</span>
+                    </div>
+                    <img src="{{ img_path_original }}" alt="Combined Original Image">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- footer -->
+
+        <div class="line"></div>
+        <footer class="div-container">
+            <div class="div-cont-sub">
+                <div class="div-row">
+                    <div class="scabies-detection">
+                        <span class="d">S</span><span class="detection">cabies</span><span class="nbsp"> </span><span
+                            class="d-16">D</span><span class="detection-17">etection</span>
+                    </div>
+                    <div class="frame-18">
+                        <a href="/" class="home-19">Home</a>
+                        <a href="/detect.html" class="detect">Detect</a><a href="/contact.html"
+                            class="contact-us">Contact us</a>
+                    </div>
+
+                    <div class="nav">
+                        <a href="https://www.facebook.com" class="link" target="_blank">
+                            <div class="icon">
+                                <div class="vector"></div>
+                            </div>
+                        </a>
+                        <a href="https://www.twitter.com" class="link-1a" target="_blank">
+                            <div class="icon-1b">
+                                <div class="vector-1c"></div>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com" class="link-1d" target="_blank">
+                            <div class="icon-1e">
+                                <div class="vector-1f"></div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com" class="link-20" target="_blank">
+                            <div class="icon-21">
+                                <div class="vector-22"></div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com" class="link-23" target="_blank">
+                            <div class="icon-24">
+                                <div class="vector-25"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="line-26"></div>
+            <footer class="footer-last-part">
+                <div class="flex-row-a">
+                    <div class="regroup">
+                        <span class="privacy-policy">Privacy Policy</span><span class="cookies-settings">Cookies
+                            Settings</span>
+                    </div>
+                    <span class="all-rights-reserved">©2024 Scabies Detection. All rights reserved</span>
+                </div>
+            </footer>
+
+
+
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("upload-form");
+            const submitButton = document.getElementById("submit-btn");
+            const waitMessage = document.getElementById("wait-message");
+
+            form.addEventListener("submit", function () {
+                // Show "Please wait..." message
+                closePopup();
+                waitMessage.style.display = "block";
+                submitButton.disabled = true; // Disable the submit button during upload
+            });
+        });
+
+
+        function openPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        function updateFileName() {
+            const fileInput = document.getElementById('file-upload');
+            const fileNameSpan = document.getElementById('file-name');
+
+            if (fileInput.files.length > 0) {
+                fileNameSpan.textContent = fileInput.files[0].name;
+            } else {
+                fileNameSpan.textContent = 'No file chosen';
+            }
+        }
+
+        function confirmUpload() {
+            const fileInput = document.getElementById('file-upload');
+            const imageContainer = document.getElementById('image-container');
+
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    imageContainer.innerHTML = '';
+                    imageContainer.appendChild(img);
+                };
+
+                reader.readAsDataURL(file);
+                closePopup();
+            } else {
+                alert('Please select a file to upload.');
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
